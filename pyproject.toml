@@ -12,6 +12,9 @@ pydantic = "^2.10.3"
 ruff = "^0.8.2"
 mypy = "^1.13.0"
 dynaconf = "^3.2.6"
+requests = "^2.32.3"
+uvicorn = "^0.32.1"
+types-requests = "^2.32.0.20241016"
 
 
 [build-system]
