@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "logistics-platform"
+version = "0.1.0"
+description = ""
+authors = ["alexbulavkin <alexbulavkin@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.6"
+pydantic = "^2.10.3"
+ruff = "^0.8.2"
+mypy = "^1.13.0"
+dynaconf = "^3.2.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
