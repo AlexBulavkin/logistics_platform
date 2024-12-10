@@ -13,5 +13,11 @@ def get_route_distance(point_a: List, point_b: List) -> float:
 def generate_map_link(route: List[List[float]]) -> str:
     # Генерация ссылки для отображения маршрута на карте
     # Необходимо реализовать
-    coordinates_str = "|".join([f"{coord[0]},{coord[1]}" for coord in route])
-    return f"https://maps.example.com/route?points={coordinates_str}"
+    # для яндекса
+    coordinates_str = "~".join([f"{coord[0]},{coord[1]}" for coord in route]) 
+    return f"https://yandex.ru/maps/?rtext={coordinates_str}&rtt=auto"
+    # для OSM
+    # coordinates_str = ";".join([f"{coord[0]},{coord[1]}" for coord in route])
+    # return f"https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route={coordinates_str}#map=13/{route[0][0]}/{route[0][1]}"
+
+

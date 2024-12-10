@@ -21,11 +21,11 @@ def calculate_optimal_route(request: LogisticsRequest) -> Tuple[List[List[float]
     route.append(request.start_point)  # Возврат в начальную точку
 
     # Проверка работы get_route_distance
-    distance = [
-        get_route_distance(request.start_point, warehouse_coordinates_last),
-        get_route_distance(request.start_point, warehouse_coordinates_last),
-    ]
-    route.append(distance)
+    # distance = [
+    #     get_route_distance(request.start_point, warehouse_coordinates_last),
+    #     get_route_distance(request.start_point, warehouse_coordinates_last),
+    # ]
+    # route.append(distance)
 
     # 3. Генерация ссылки на карту
     map_link = generate_map_link(route)
