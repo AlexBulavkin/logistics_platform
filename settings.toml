@@ -1,0 +1,6 @@
+[app_settings]
+app_port = 8000
+app_version = "1.0.0"
+app_name = "logistics_platform"
+app_host = "127.0.0.1"
+app_mount = "/api/v1"
